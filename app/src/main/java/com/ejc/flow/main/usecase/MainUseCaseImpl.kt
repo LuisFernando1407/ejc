@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 
 class MainUseCaseImpl(private val repo: MainRepository): MainUseCase {
-    override suspend fun movies(): Flow<List<Movie>> {
+    override fun movies(): Flow<List<Movie>> {
         return flow {
             val movies = repo.movies()
             emit(movies)
