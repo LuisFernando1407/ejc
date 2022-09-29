@@ -28,6 +28,7 @@ import coil.transform.CircleCropTransformation
 import com.ejc.flow.main.data.Movie
 import com.ejc.ui.theme.EjcTheme
 import com.ejc.util.AppError
+import com.ejc.util.EMPTY
 import com.ejc.util.Progress
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 import org.koin.core.context.loadKoinModules
@@ -166,8 +167,8 @@ fun DefaultPreview() {
     repeat(10) {
         items.add(
             Movie(
-                category = "Lorem",
-                imageUrl = "https://howtodoandroid.com/images/terminator_2.jpg",
+                category = "Category",
+                imageUrl = String.EMPTY,
                 name = "Name",
                 description = "Description"
             )
